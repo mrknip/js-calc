@@ -1,0 +1,12 @@
+.btn {
+	width: 30px;
+	height: 30px;
+	background: grey;
+	text-align: center;
+	margin: 2px;
+	display: inline-block;
+}
+
+.btn:hover {
+	background: #AAA;
+}
