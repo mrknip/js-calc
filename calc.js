@@ -1,9 +1,21 @@
 var operations = ['+', '-', '*', '/', '=', 'C']
 
-var currentOperation = function() {
+var inputParser = function() {
   this.x = undefined;
   this.y = undefined;
   this.operation = undefined;
+
+  this.parse = function(input) {
+    if (input.type == 'number') {
+      this.x = input;
+      console.log(this.x);
+      // add to first term
+    }
+
+    if (input.type == 'operation') {
+      // do an operation
+    }
+  }
 }
 
 function add(x,y) {
@@ -42,7 +54,6 @@ function makeOperationButtons() {
     document.getElementById('calcPad').appendChild(makeButton(operations[i]));  
   }
 }
-
 
 function setListeners() {
   for (var i = 1; i <= 9; i++) {
