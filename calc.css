@@ -1,12 +1,37 @@
-.btn {
+body {
+	font-family: sans-serif;
+	font-size: 12;
+	line-height: 1.2;
+}
+
+#numbers {
+	float: left;
+	width: 100px;
+}
+
+#operators {
+	float: right;
 	width: 30px;
-	height: 30px;
-	background: grey;
+}
+
+.btn {
+	cursor: default;
+	width: 30px;
+	background: #ddd;
 	text-align: center;
-	margin: 2px;
+	margin: 1px;
+	padding: 9px 0;
 	display: inline-block;
+	vertical-align: center;
 }
 
 .btn:hover {
 	background: #AAA;
+}
+
+#screen {
+	height: 25px;
+	width: 100px;
+	border: 1px solid #ddd;
+	overflow: hidden;
 }
